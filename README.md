@@ -59,7 +59,29 @@ Grupo regional con:
 
 ## 🏗️ Arquitectura general
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   Fuentes Legacy / CSV simulados                ↓  ETL en Python (Extract / Transform)                ↓  Data Lake Local (Parquet)  Bronze → Silver → Gold                ↓  Orquestación  Apache Airflow (Docker)                ↓  Capa de Consumo  Power BI   `
+Fuentes Legacy / CSV simulados
+
+↓
+
+ETL en Python (Extract / Transform)
+
+↓
+
+Data Lake Local (Parquet)
+
+Bronze → Silver → Gold
+
+↓
+
+Orquestación
+
+Apache Airflow (Docker)
+
+↓
+
+Capa de Consumo
+
+Power BI
 
 ## 🧱 Fases del proyecto
 
@@ -133,7 +155,45 @@ El dashboard está orientado a **gerencia y directores**, mostrando:
 
 ## 📂 Estructura del repositorio
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   novaretail-end-to-end-data-platform/  │  ├── data/  │   ├── bronze/  │   ├── silver/  │   └── gold/  │  ├── etl/  │   ├── extract/  │   └── transform/  │  ├── orchestration/  │   └── airflow/  │  ├── powerbi/  │   └── novaretail_dashboard.pbix  │  ├── docs/  │  └── README.md   `
+novaretail-end-to-end-data-platform/
+
+│
+
+├── data/
+
+│ ├── bronze/
+
+│ ├── silver/
+
+│ └── gold/
+
+│
+
+├── etl/
+
+│ ├── extract/
+
+│ └── transform/
+
+│
+
+├── orchestration/
+
+│ └── airflow/
+
+│
+
+├── powerbi/
+
+│ └── novaretail_dashboard.pbix
+
+│
+
+├── docs/
+
+│
+
+└── README.md
 
 ## 🛠️ Tecnologías utilizadas
 
