@@ -1,0 +1,23 @@
+[2026-01-12T23:31:09.229+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-12T23:31:09.295+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: novaretail_etl_pipeline.gold_kpis.gold_kpi_ventas manual__2026-01-12T23:28:27.006071+00:00 [queued]>
+[2026-01-12T23:31:09.312+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: novaretail_etl_pipeline.gold_kpis.gold_kpi_ventas manual__2026-01-12T23:28:27.006071+00:00 [queued]>
+[2026-01-12T23:31:09.313+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2026-01-12T23:31:09.337+0000] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): gold_kpis.gold_kpi_ventas> on 2026-01-12 23:28:27.006071+00:00
+[2026-01-12T23:31:09.369+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=1811) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-01-12T23:31:09.354+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'novaretail_etl_pipeline', 'gold_kpis.gold_kpi_ventas', 'manual__2026-01-12T23:28:27.006071+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/novareatil_etl_dag.py', '--cfg-path', '/tmp/tmpwio_kroq']
+[2026-01-12T23:31:09.370+0000] {standard_task_runner.py:91} INFO - Job 84: Subtask gold_kpis.gold_kpi_ventas
+[2026-01-12T23:31:09.370+0000] {standard_task_runner.py:63} INFO - Started process 1815 to run task
+[2026-01-12T23:31:09.470+0000] {task_command.py:426} INFO - Running <TaskInstance: novaretail_etl_pipeline.gold_kpis.gold_kpi_ventas manual__2026-01-12T23:28:27.006071+00:00 [running]> on host 8812783e36e1
+[2026-01-12T23:31:09.670+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='carlos' AIRFLOW_CTX_DAG_ID='novaretail_etl_pipeline' AIRFLOW_CTX_TASK_ID='gold_kpis.gold_kpi_ventas' AIRFLOW_CTX_EXECUTION_DATE='2026-01-12T23:28:27.006071+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-12T23:28:27.006071+00:00'
+[2026-01-12T23:31:09.671+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-12T23:31:09.711+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-01-12T23:31:09.715+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/etl/gold/gold_kpi_ventas.py']
+[2026-01-12T23:31:09.748+0000] {subprocess.py:86} INFO - Output:
+[2026-01-12T23:31:12.269+0000] {subprocess.py:93} INFO - ✅ KPI Ventas generado
+[2026-01-12T23:31:12.272+0000] {subprocess.py:93} INFO - Total Ventas: 60114852.0
+[2026-01-12T23:31:12.529+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-01-12T23:31:12.532+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-12T23:31:12.607+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=novaretail_etl_pipeline, task_id=gold_kpis.gold_kpi_ventas, execution_date=20260112T232827, start_date=20260112T233109, end_date=20260112T233112
+[2026-01-12T23:31:13.357+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-01-12T23:31:13.400+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-12T23:31:13.410+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
